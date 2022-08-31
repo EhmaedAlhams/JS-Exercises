@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    margin: 100px;
+    color: #FFF;
+}
+/* body{
+    height: 5000px;
+}
+
+div{
+    font-size: 40px;
+    line-height: 2;
+    color: rosybrown;
+}
+
+span{
+    display: block;
+}
+
+button{
+    display: none;
+    padding: 15px;
+    color: white;
+    background-color:rgb(130, 129, 130);
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+} */

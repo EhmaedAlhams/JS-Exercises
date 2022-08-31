@@ -1,0 +1,13 @@
+{
+    "string": "Ehmaed",
+    "name": "my name",
+    "age": 23,
+    
+    "country": {
+        "palestine": "Gaza strip",
+        "KSA": "Riyadh"
+    },
+    "Array": ["HTML", "CSS", "JS"],
+    "Boolean Value": true,
+    "Not Know": null
+}
