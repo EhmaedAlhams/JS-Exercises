@@ -3793,4 +3793,31 @@ $(selector).show(speed,callback);
 // The not() method is the opposite of filter().
 
 
+// SECTION: jQuery - AJAX
+// AJAX is the art of exchanging data with a server, and updating parts of a web page - without reloading the whole page.
 
+// In short; AJAX is about loading data in the background and display it on the webpage, without reloading the whole page.
+
+
+// The load() method loads data from a server and puts the returned data into the selected element.
+
+// Syntax:
+
+// $(selector).load(URL,data,callback);
+
+// NOTE: required to execute these function go live server.
+// $(function () {
+// 	$("button").click(function () {
+// 		// $(".test").load("/text.txt");
+// 		// $(".test").load("app.js");
+// 		$(".test").load("jsonFile.json");
+
+// 	});
+// });
+
+
+// The callback function can have different parameters:
+
+// responseTxt - contains the resulting content if the call succeeds
+// statusTxt - contains the status of the call
+// xhr - contains the XMLHttpRequest object
