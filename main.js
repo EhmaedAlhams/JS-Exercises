@@ -3669,3 +3669,45 @@ $(selector).show(speed,callback);
 // 	})
 // })
 
+
+// SECTION: jQuery - Dimensions
+
+// Width() => returns the width of an element (excludes padding, border and margin).
+// Height() => returns the height of an element (excludes padding, border and margin).
+
+
+// innerWidth() => returns the width of an element (includes padding).
+// innerHeight() => returns the height of an element (includes padding).
+
+// outerWidth(true) => returns the width of an element (includes padding, border, and margin).
+// outerHeight(true) => returns the height of an element (includes padding, border, and margin).
+
+// $(function () {
+// 	$("button").click(function () {
+// 		var text = "";
+// 		text += "Width: " + $(".p1").width() + "</br>";
+// 		text += "Height: " + $(".p1").height() + "</br>";
+// 		text += "Inner width of div: " + $(".p1").innerWidth() + "</br>";
+// 		text += "Inner height of div: " + $(".p1").innerHeight() + "</br>";
+// 		text += "Outer width of div: " + $(".p1").outerWidth() + "</br>";
+// 		text += "Outer height of div: " + $(".p1").outerHeight() + "</br>";
+// 		text += "Outer width of div (margin included): " + $(".p1").outerWidth(true) + "</br>";
+// 		text += "Outer height of div (margin included): " + $(".p1").outerHeight(true);
+// 		$(".p1").html(text);
+// 	});
+// });
+
+//. The following example returns the width and height of the document (the HTML document) and window (the browser viewport):
+
+
+// $(document).ready(function(){
+// 	$("button").click(function () {
+// 		var txt = "";
+// 		txt += "Document width/height: " + $(document).width();
+// 		txt += "x" + $(document).height() + "\n";
+// 		txt += "Window width/height: " + $(window).width();
+// 		txt += "x" + $(window).height();
+// 		alert(txt);
+// 	});
+// });
+
