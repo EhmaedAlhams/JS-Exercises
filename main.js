@@ -3637,3 +3637,35 @@ $(selector).show(speed,callback);
 // 	});
 // });
 
+
+// SECTION: jQuery Manipulating CSS
+
+// addClass() - Adds one or more classes to the selected elements
+// removeClass() - Removes one or more classes from the selected elements
+// toggleClass() - Toggles between adding/removing classes from the selected elements
+// css() - Sets or returns the style attribute
+
+
+// $(function () {
+// 	$("button").click(function () {
+// 		$("h1, .p1, .test").addClass('important');
+// 	});
+// });
+
+
+// jQuery css() Method:
+// css("propertyname");
+
+// To set multiple CSS properties, use the following syntax:
+// css({"propertyname":"value","propertyname":"value",...});
+
+
+// $(function () {
+// 	$('button').click(function () {
+// 		$('p').css({
+// 			"background-color": "red",
+// 			"font-size": '200px'
+// 		})
+// 	})
+// })
+
