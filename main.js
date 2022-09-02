@@ -3821,3 +3821,25 @@ $(selector).show(speed,callback);
 // responseTxt - contains the resulting content if the call succeeds
 // statusTxt - contains the status of the call
 // xhr - contains the XMLHttpRequest object
+
+// SECTION: jQuery - AJAX get() and post() Methods
+// HTTP Request: GET vs. POST
+// Two commonly used methods for a request-response between a client and server are: GET and POST.
+
+// GET - Requests data from a specified resource
+// POST - Submits data to be processed to a specified resource
+// GET is basically used for just getting (retrieving) some data from the server. Note: The GET method may return cached data.
+
+// POST can also be used to get some data from the server. However, the POST method NEVER caches data, and is often used to send data along with the request.
+
+// The first callback parameter holds the content of the page requested, and the second callback parameter holds the status of the request.
+
+
+$(function () {
+	$("button").click(function () {
+		$.get('text.txt', function (data, status) {
+			alert("Data: " + data + "\nStatus: " + status);
+		});
+	});
+});
+
