@@ -1,13 +1,25 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 
-form{
+/* form{
     margin: 100px;
     color: #FFF;
+} */
+
+button{
+    padding: 20px;
 }
+
+.important{
+    color: white;
+    background-color: black;
+}
+/* p.fadeIn{
+    display: none;
+} */
 /* body{
     height: 5000px;
 }

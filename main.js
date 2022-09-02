@@ -3359,3 +3359,24 @@ $(selector).show(speed,callback);
 
 // 2- Fading effects: 
 
+// $(function () {
+// 	$("button").click(function () { 
+// 		// $("p").fadeIn("slow")
+// 		$(".fadeIn").fadeIn("3000")
+// 		$(".fadeOut").fadeOut("6000")
+// 	});
+// });
+
+// Syntax:
+// $(selector).fadeToggle(speed,callback);
+
+// allows fading to a given opacity
+// $(function () {
+// 	$("button").click(function () { 
+// 		// $("p").fadeIn("slow")
+// 		// $(".fadeIn").fadeIn("3000")
+// 		// $(".fadeOut").fadeOut("6000")
+// 		// $(".fadeToggle").fadeToggle();
+// 		$(".fadeTo").fadeTo("slow", 0.15);
+// 	});
+// });
