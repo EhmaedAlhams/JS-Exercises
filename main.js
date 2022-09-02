@@ -3543,3 +3543,69 @@ $(selector).show(speed,callback);
 
 
 // SECTION: DOM JQuery => jQuery contains powerful methods for changing and manipulating HTML elements and attributes.
+
+
+// jQuery HTML GET
+
+/**
+ * 1- text()
+ * 2- html()
+ * 3- val()
+ * 4- attr()
+ */
+// $(function () {
+// 	$("button").click(function () {
+// 		alert("HTML: " + $("p").html())
+// 	});
+// });
+
+
+// jQuery HTML SET
+
+// $(function () {
+// 	$("button").click(function () {
+// 		$("#p1").html('<p style="width: 300px; height: 400px"></p>')
+// 	});
+// })
+
+
+// $(function () {
+// 	$("button").click(function () {
+// 		$("#p1").html(function (i, origin) {
+// 			console.log(`here index ${i}, and the origin text: ${origin}`);
+// 			return i + "and " + origin;
+// 		});
+// 	});
+// })
+
+
+// $(function () {
+	
+// 	$("button").click(function () {
+// 		$("#p1").html(function (i, origText) {
+// 			return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")";
+// 		});
+// 	});
+// });
+
+
+// SECTION: add element html with JQuery.
+
+// $(function () {
+// 	$("button").click(function () {
+// 		// $(".p1").append('<b>append items</b>')
+// 		$(".p1").prepend('<b>append items</b>')
+// 	});
+// });
+
+// function appendTo() {
+// 	var txt1 = "Text1";
+// 	var txt2 = $("<p></p>").text("Text2");
+// 	var txt3 = document.createElement("p").innerHTML = "Text3";
+
+// 	// $("body").append(txt1, txt2, txt3);
+// 	// $("body").prepend(txt1, txt2, txt3);
+// 	$("body").after("Some text after");
+// 	$("body").before("Some text after");
+
+// }
