@@ -3777,3 +3777,20 @@ $(selector).show(speed,callback);
 // 	})
 // });
 
+
+// jQuery Traversing - Filtering
+
+// The first(), last(), eq(), filter() and not() Methods
+// The most basic filtering methods are first(), last() and eq(), which allow you to select a specific element based on its position in a group of elements.
+
+// Other filtering methods, like filter() and not() allow you to select elements that match, or do not match, a certain criteria.
+
+
+// first() method returns the first element of the specified elements.
+// last() method returns the last element of the specified elements.
+// eq(index) method returns an element with a specific index number of the selected elements.
+// filter() method lets you specify a criteria.
+// The not() method is the opposite of filter().
+
+
+
