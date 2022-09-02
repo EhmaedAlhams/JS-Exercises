@@ -3414,3 +3414,87 @@ $(selector).show(speed,callback);
 // });
 
 
+// ANCHOR: Animation effect jquery.
+
+// Syntax: $(selector).animate({params},speed,callback);
+
+// $(function () { 
+// 	$("button").click(function () { 
+// 		$("p").animate({left: '80px'}, 'slow')
+// 	});
+// });
+
+
+// jQuery animate() - Manipulate Multiple Properties
+
+// $(function () { 
+// 	$("button").click(function () { 
+// 		$("p").animate({
+// 			left: '100px',
+// 			bottom: '100px',
+// 			right: '100px'
+// 		}, 'slow')
+// 	});
+// });
+
+// $(function () { 
+// 	$("button").click(function () { 
+// 		$("p").animate({
+// 			left: '100px',
+// 			opacity: '0.5',
+// 			width: '200px',
+// 			height: '200px'
+// 		}, 'slow')
+// 	});
+// });
+
+
+
+// SECTION: animate() - Using Relative Values
+
+// $(function () { 
+// 	$("button").click(function () {
+// 		$("p").animate({
+// 			left: '+=150px'
+// 		})
+// 	})
+// });
+
+
+// SECTION: jQuery animate() - Using Pre-defined Values
+
+
+// $("button").click(function(){
+// 	$("div").animate({
+// 		height: 'toggle'
+// 	});
+// }); 
+
+
+// NOTE: Uses Queue Functionality => runs the animate calls ONE by ONE.
+
+// Uses Queue Functionality: 
+
+// $(function () {
+// 	$("button").click(function () {
+// 		var p = $('p');
+// 		p.animate({ left: '200px' }, 'slow');
+// 		p.animate({ opacity: '0' }, 'slow');
+// 	})
+// })
+
+// SECTION: jQuery Stop Animations.
+
+// $(function () {
+// 	$('button').click(function () {
+// 		$('p').animate({
+// 			left: '200px',
+// 			width: "+=500px"
+// 		}, 5000);
+
+// 		$(".stop").click(function () {
+// 			$('p').stop()
+// 		})
+// 	})
+// })
+
