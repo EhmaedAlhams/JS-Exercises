@@ -3380,3 +3380,37 @@ $(selector).show(speed,callback);
 // 		$(".fadeTo").fadeTo("slow", 0.15);
 // 	});
 // });
+
+// NOTE: Slide effect jquery.
+
+// Syntax:
+// $(selector).slideDown(speed,callback);
+
+// $(function () { 
+// 	$("button").click(function () { 
+// 		$("p").slideDown()
+// 	});
+// });
+
+
+// Syntax:
+// $(selector).slideUp(speed,callback);
+
+
+// $(function () { 
+// 	$("button").click(function () { 
+// 		$("p").slideUp()
+// 	});
+// });
+
+
+// Syntax:
+// $(selector).slideToggle(speed,callback);
+
+// $(function () { 
+// 	$("button").click(function () { 
+// 		$("p").slideToggle()
+// 	});
+// });
+
+
