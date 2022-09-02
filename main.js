@@ -3734,3 +3734,25 @@ $(selector).show(speed,callback);
 // 	})
 // });
 
+
+// jQuery Traversing - Descendants
+// Two useful jQuery methods for traversing down the DOM tree are:
+
+// children() 	=> returns all direct children of the selected element.
+// find() 	=> returns descendant elements of the selected element.
+
+// children:
+
+// $(function () {
+// 	$(".test").children().css({
+// 		"color": "white",
+// 	})
+// });
+
+
+// $(function () {
+// 	$(".flip").find(".test").css({
+// 		"color": "white",
+// 	})
+// });
+
