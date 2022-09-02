@@ -3498,3 +3498,48 @@ $(selector).show(speed,callback);
 // 	})
 // })
 
+
+// SECTION: jQuery Callback Functions
+// A callback function is executed after the current effect is 100% finished.
+// Typical syntax: $(selector).hide(speed,callback);
+
+
+// $(function () {
+// 	$('button').click(function () {
+// 		$('p').hide("slow", function () {
+// 			console.log("hide element done!");
+// 		})
+// 	})
+// })
+
+// when no callback parameter, and the alert box will be displayed before the hide effect is completed:
+
+// $(function () {
+// 	$('button').click(function () {
+// 		$('p').hide(1000);
+// 		console.log("hide element done")
+// 	})
+// })
+
+
+// $(function () {
+// 	$(".click").click(function () {
+// 		$("p").css("background-color", 'red').slideUp(2000).slideDown(2000);
+// 	});
+	// $(".stop").click(function () {
+	// 	$('p').stop();
+	// });
+// })
+
+
+// $(document).ready(function(){
+// 	$("button").click(function () {
+// 		$("#p1")
+// 			.css("color", "red")
+// 			.slideUp(2000)
+// 			.slideDown(2000);
+// 	});
+// });
+
+
+// SECTION: DOM JQuery => jQuery contains powerful methods for changing and manipulating HTML elements and attributes.
