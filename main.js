@@ -3609,3 +3609,31 @@ $(selector).show(speed,callback);
 // 	$("body").before("Some text after");
 
 // }
+
+// Remove Elements/Content
+
+// remove() - Removes the selected element (and its child elements)
+
+// $(document).ready(function(){
+// 	$("button").click(function () {
+// 		$(".p1").remove();
+// 	});
+// });
+
+// empty() - Removes the child elements from the selected element
+
+// $(function(){
+// 	$("button").click(function () {
+// 		$(".p1").empty();
+// 	});
+// });
+
+// method also accepts one parameter, which allows you to filter the elements to be removed.
+// remove paragraph class test.
+
+// $(function(){
+// 	$("button").click(function () {
+// 		$("p").remove(".test");
+// 	});
+// });
+
