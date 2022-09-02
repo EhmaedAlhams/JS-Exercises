@@ -3711,3 +3711,26 @@ $(selector).show(speed,callback);
 // 	});
 // });
 
+
+// SECTION: jQuery Traversing - Ancestors:
+// Three useful jQuery methods for traversing up the DOM tree are:
+
+// parent()
+// parents()
+// parentsUntil()
+
+// $(function () {
+// 	$(".p1").parent().css({
+// 		color: "red",
+// 		backgroundColor: "black"
+// 	})
+// });
+
+// parentsUntil():
+// $(function () {
+// 	$(".test").parentsUntil(".flip").css({
+// 		color: "red",
+// 		backgroundColor: "black"
+// 	})
+// });
+
