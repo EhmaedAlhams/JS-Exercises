@@ -3756,3 +3756,24 @@ $(selector).show(speed,callback);
 // 	})
 // });
 
+
+// SECTION: jQuery Traversing - Siblings
+
+// There are many useful jQuery methods for traversing sideways in the DOM tree:
+
+// siblings()
+// next()
+// nextAll()
+// nextUntil()
+// prev()
+// prevAll()
+// prevUntil()
+
+
+// siblings
+// $(function () {
+// 	$("p").siblings().css({
+// 		"color": "white",
+// 	})
+// });
+
