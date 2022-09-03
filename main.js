@@ -3835,11 +3835,40 @@ $(selector).show(speed,callback);
 // The first callback parameter holds the content of the page requested, and the second callback parameter holds the status of the request.
 
 
-$(function () {
-	$("button").click(function () {
-		$.get('text.txt', function (data, status) {
-			alert("Data: " + data + "\nStatus: " + status);
-		});
-	});
-});
+// $(function () {
+// 	$("button").click(function () {
+// 		$.get('text.txt', function (data, status) {
+// 			alert("Data: " + data + "\nStatus: " + status);
+// 		});
+// 	});
+// });
+
+
+// SECTION: jQuery Misc
+
+// If two different frameworks are using the same shortcut, one of them might stop working.
+
+// The jQuery team have already thought about this, and implemented the noConflict() method.
+
+// $.noConflict();
+// jQuery(document).ready(function () {
+// 	jQuery("button").click(function () {
+// 		jQuery(".p1").text("JQuery Test Example.")
+// 	});
+// });
+
+
+// $.noConflict();
+// jQuery(document).ready(function(){
+// 	jQuery("button").click(function () {
+// 		jQuery("p").text("jQuery is still working!");
+// 	});
+// });
+
+// var jq = $.noConflict();
+// jq(document).ready(function () {
+// 	jq("button").click(function () {
+// 		jq("p").text("jQuery is still working!");
+// 	});
+// });
 
