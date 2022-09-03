@@ -3872,3 +3872,11 @@ $(selector).show(speed,callback);
 // 	});
 // });
 
+// Extend, Element:
+// $(function () { 
+// 	$.extend($.expr[':'], {
+// 		moreThen: function () {
+			// Code here.
+// 		}
+// 	});
+// });
