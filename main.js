@@ -3873,10 +3873,26 @@ $(selector).show(speed,callback);
 // });
 
 // Extend, Element:
-// $(function () { 
+// $(function () {
 // 	$.extend($.expr[':'], {
 // 		moreThen: function () {
 			// Code here.
 // 		}
+// 	});
+// });
+
+/*global $, console*/
+// SECTION:	Textarea Remaining Characters.
+
+// $(function () { 
+// 	var textArea = $('textarea').attr('maxLength'),
+// 		msg = $(".msg");
+// 	console.log(textArea);
+
+// 	msg.html('<span>'+textArea+'</span> Characters remaining');
+// 	$("textarea").keyup(function () { 
+// 		var textLength = $(this).val().length,
+// 			remainChar = textArea - textLength;
+// 		msg.html('<span>'+remainChar+'</span> Characters remaining')
 // 	});
 // });
