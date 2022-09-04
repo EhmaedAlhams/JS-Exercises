@@ -3884,15 +3884,33 @@ $(selector).show(speed,callback);
 /*global $, console*/
 // SECTION:	Textarea Remaining Characters.
 
-// $(function () { 
+// $(function () {
 // 	var textArea = $('textarea').attr('maxLength'),
 // 		msg = $(".msg");
 // 	console.log(textArea);
 
 // 	msg.html('<span>'+textArea+'</span> Characters remaining');
-// 	$("textarea").keyup(function () { 
+// 	$("textarea").keyup(function () {
 // 		var textLength = $(this).val().length,
 // 			remainChar = textArea - textLength;
 // 		msg.html('<span>'+remainChar+'</span> Characters remaining')
 // 	});
 // });
+
+// SECTION: Password Field
+
+// $(function () { 
+// 	$('button').click(function () { 
+// 		$(this).toggleClass("active");
+// 		if ($(this).hasClass('active')) { 
+// 			$(this).text("hide password").prev().attr("type", 'text');
+// 		} else {
+// 			$(this).text("show password").prev().attr("type", 'password');	
+// 		}
+// 	});
+// });
+
+// The preventDefault() method will prevent the link above from following the URL.
+// $("a").click(function(event){
+//     event.preventDefault();
+//   });
