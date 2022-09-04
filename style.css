@@ -17,6 +17,13 @@ button{
     color: white;
     background-color: black;
 }
+
+div.p1{
+    position: relative;
+}
+#img{
+    position: absolute;
+}
 /* p.fadeIn{
     display: none;
 } */

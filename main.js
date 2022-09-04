@@ -3899,13 +3899,13 @@ $(selector).show(speed,callback);
 
 // SECTION: Password Field
 
-// $(function () { 
-// 	$('button').click(function () { 
+// $(function () {
+// 	$('button').click(function () {
 // 		$(this).toggleClass("active");
-// 		if ($(this).hasClass('active')) { 
+// 		if ($(this).hasClass('active')) {
 // 			$(this).text("hide password").prev().attr("type", 'text');
 // 		} else {
-// 			$(this).text("show password").prev().attr("type", 'password');	
+// 			$(this).text("show password").prev().attr("type", 'password');
 // 		}
 // 	});
 // });
@@ -3914,3 +3914,19 @@ $(selector).show(speed,callback);
 // $("a").click(function(event){
 //     event.preventDefault();
 //   });
+
+
+// SECTION: Infinity Animation Function.
+
+
+// $(function animateImage() { 
+// 	$('#img').animate({
+// 		right: '50px'
+// 	}, 2000, function () { 
+// 		$(this).animate({
+// 			right: '-50px'
+// 		}, 2000, function () { 
+// 			animateImage();
+// 		});
+// 	});
+// });
