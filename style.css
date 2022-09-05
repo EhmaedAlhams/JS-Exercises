@@ -9,6 +9,11 @@
     color: #FFF;
 } */
 
+body{
+    position: relative;
+    height: 100rem;
+}
+
 button{
     padding: 20px;
 }
@@ -23,6 +28,26 @@ div.p1{
 }
 #img{
     position: absolute;
+}
+
+/* // SECTION: Scroll Button in js file */
+#Up{
+    text-align: center;
+    background-color: gray;
+    color: whitesmoke;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    right: 100px;   
+    bottom: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#Up:hover{
+    background-color: rgb(84, 83, 83);
 }
 /* p.fadeIn{
     display: none;

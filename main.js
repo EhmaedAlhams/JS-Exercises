@@ -3919,14 +3919,35 @@ $(selector).show(speed,callback);
 // SECTION: Infinity Animation Function.
 
 
-// $(function animateImage() { 
+// $(function animateImage() {
 // 	$('#img').animate({
 // 		right: '50px'
-// 	}, 2000, function () { 
+// 	}, 2000, function () {
 // 		$(this).animate({
 // 			right: '-50px'
-// 		}, 2000, function () { 
+// 		}, 2000, function () {
 // 			animateImage();
 // 		});
 // 	});
+// });
+
+
+// SECTION: Scroll Button in js file
+
+// $(function () {
+// 	var scroll = $("#Up");
+// 	$(window).scroll(function () {
+// 		if ($(this).scrollTop() >= 400) {
+// 			scroll.show();
+// 		} else {
+// 			scroll.hide();
+// 		};
+// 	});
+
+// 	scroll.click(function () { 
+// 		$("html, body").animate({
+// 			scrollTop: 0
+// 		}, 600);
+// 	});
+// 	// scroll.scrollTop();
 // });
