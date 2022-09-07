@@ -12,6 +12,7 @@
 body{
     position: relative;
     height: 100rem;
+    font: 16px/200% Arial, Tahoma;
 }
 
 button{

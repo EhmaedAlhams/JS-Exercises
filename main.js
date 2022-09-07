@@ -3944,10 +3944,11 @@ $(selector).show(speed,callback);
 // 		};
 // 	});
 
-// 	scroll.click(function () { 
+// 	scroll.click(function () {
 // 		$("html, body").animate({
 // 			scrollTop: 0
 // 		}, 600);
 // 	});
 // 	// scroll.scrollTop();
 // });
+
