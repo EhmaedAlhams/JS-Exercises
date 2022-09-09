@@ -75,11 +75,11 @@
 //     );
 // });
 
-$(function () {
-    $('#show').click(function () { 
-        // e.preventDefault();
-        // $('#show').hide()
-        console.log('hide h1');
+// $(function () {
+//     $('#show').click(function () { 
+//         // e.preventDefault();
+//         $('h1').hide()
+//         console.log('hide h1');
         
-    });
-});
+//     });
+// });

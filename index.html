@@ -12,24 +12,9 @@
     
     <h1>Welcome To JS</h1>
 
-    <div id="show"></div>
-    <script>
-        // $(function () {
-        //     $.getJSON("/JSON & AJAX File/data.jsonc",
-        //         function (data) {
-        //             console.log(data);
-        //             var content = "";
+    <h1 id="username">click me here</h1>
+    <h1 id="age">click me here</h1>
 
-        //             for(var x in data){
-        //                 content += data[x].username + '<br>';
-        //             }
-        //             console.log(content);
-        //             $('#show').html(content);
-        //         }
-        //     );
-        // });  
-    </script>
-    <script src="/JS File/app.js"></script>
     <!-- JSON file  -->
     <!-- <script src="/JS File/app.js">
         const obj = '{"user": "Ehmaed", "age": "26"}'
@@ -61,6 +46,27 @@
         console.log(jsonObj);
         console.log(typeof (jsonObj));
     </script> -->
+    <script>
+
+        // ANCHOR: Load JSON Data With jQuery $ getJSON
+        // $(function () {
+        //     $.getJSON("/JSON & AJAX File/data.json",
+        //         function (data) {
+        //             console.log(data);
+        //             var content = "";
+
+        //             for(var x in data){
+        //                 content += data[x].username + '<br>';
+        //                 content += data[x].Age + '<br>';
+        //                 // console.log(data[x]);
+        //             }
+        //             console.log(content);
+        //             $('#username').html(content);
+        //             $('#age').html(content);
+        //         }
+        //     );
+        // });  
+    </script>
 </body>
 </html>
 <!-- Name: <input type="text" name="fullname"><br>
