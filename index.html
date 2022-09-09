@@ -4,18 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="jquery-3.6.1.min.js"></script> -->
+    <link rel="stylesheet" href="/CSS File/style.css">
+    <script src="/JS File/jquery-3.6.1.min.js"></script>
     <title>JavaScript Testing</title>
 </head>
 <body>
     
     <h1>Welcome To JS</h1>
 
-    <script src="main.js"></script>
+    <div id="show"></div>
+    <script>
+        // $(function () {
+        //     $.getJSON("/JSON & AJAX File/data.jsonc",
+        //         function (data) {
+        //             console.log(data);
+        //             var content = "";
+
+        //             for(var x in data){
+        //                 content += data[x].username + '<br>';
+        //             }
+        //             console.log(content);
+        //             $('#show').html(content);
+        //         }
+        //     );
+        // });  
+    </script>
+    <script src="/JS File/app.js"></script>
+    <!-- JSON file  -->
+    <!-- <script src="/JS File/app.js">
+        const obj = '{"user": "Ehmaed", "age": "26"}'
+        let objParse = JSON.parse(obj);
+
+        console.log(obj);
+        console.log(typeof (obj));
+
+        console.log(objParse);
+        console.log(typeof (objParse));
+    </script>  -->
+<!-- 
+    <script>
+
+        // JSON Obj
+        const obj = '{"user": "Ehmaed", "age": "26"}'
+        let objParse = JSON.parse(obj);
+        
+        // string from server
+        console.log(obj);
+        console.log(typeof (obj));
+
+        // object to modifier.
+        console.log(objParse);
+        console.log(typeof (objParse));
+
+        let jsonObj = JSON.stringify(objParse);
+        
+        console.log(jsonObj);
+        console.log(typeof (jsonObj));
+    </script> -->
 </body>
 </html>
-
 <!-- Name: <input type="text" name="fullname"><br>
     Email: <input type="text" name="email"> -->
     <!-- <p>Welcome To JS</p>

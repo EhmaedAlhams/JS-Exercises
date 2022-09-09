@@ -1,0 +1,37 @@
+// {
+// 	"string": "Ehmaed",
+// 	"name": "my name",
+// 	"age": 23,
+
+// 	// braces contains object.
+// 	"country": {
+//     "palestine": "Gaza strip",
+//     "KSA": "Riyadh",
+//     "arr": ["html", "css"]
+// },
+
+// 	// square brackets contains arrays
+
+// 	"Array": ["HTML", "CSS", "JS"],
+// 	"Boolean Value": true,
+// 	"Not Know": null
+// }
+
+[
+	{
+	"username": "Ehmaed",
+	"Age": 26
+	},
+	{
+	"username": "Ehmaed",
+	"Age": 26
+	},
+	{
+	"username": "Ehmaed",
+	"Age": 26
+	},
+	{
+	"username": "Ehmaed",
+	"Age": 26
+	}
+]
