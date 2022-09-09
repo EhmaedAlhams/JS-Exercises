@@ -46,27 +46,46 @@
         console.log(jsonObj);
         console.log(typeof (jsonObj));
     </script> -->
-    <script>
+    <script src="/JS File/app.js">
 
         // ANCHOR: Load JSON Data With jQuery $ getJSON
         // $(function () {
         //     $.getJSON("/JSON & AJAX File/data.json",
         //         function (data) {
-        //             console.log(data);
-        //             var content = "";
+                //     console.log(data);
+                //     var content = "";
 
-        //             for(var x in data){
-        //                 content += data[x].username + '<br>';
-        //                 content += data[x].Age + '<br>';
-        //                 // console.log(data[x]);
-        //             }
-        //             console.log(content);
-        //             $('#username').html(content);
-        //             $('#age').html(content);
-        //         }
+                //     for(var x in data){
+                //         content += data[x].username + '<br>';
+                //         content += data[x].Age + '<br>';
+                //         // console.log(data[x]);
+                //     }
+                //     console.log(content);
+                //     $('#username').html(content);
+                //     $('#age').html(content);
+                // }
         //     );
         // });  
+
+
+        // // ANCHOR: Load JSON Data With jQuery $ Ajax
+
+        // $.ajax({
+        //     url: "https://api.github.com/users/ehmaedalhams/repos",
+        //     dataType: "json",
+        //     cache: false,
+        //     success: function (data, status) {
+        //         console.log(data);
+        //         console.log(status);
+        //     },
+        //     error: function(xhr, textStatus, error){
+        //         console.log(xhr);
+        //         console.log(textStatus);
+        //         console.log(error);
+        //     }
+        // });
     </script>
+    <script src="/JSON & AJAX File/data.json"></script>
 </body>
 </html>
 <!-- Name: <input type="text" name="fullname"><br>

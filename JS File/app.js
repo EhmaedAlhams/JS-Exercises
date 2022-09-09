@@ -76,10 +76,59 @@
 // });
 
 // $(function () {
-//     $('#show').click(function () { 
+//     $('#show').click(function () {
 //         // e.preventDefault();
 //         $('h1').hide()
 //         console.log('hide h1');
         
 //     });
+// });
+
+
+
+// ANCHOR: Load JSON Data With jQuery $ Ajax
+
+// $.ajax({
+//     url: "https://api.github.com/users/ehmaedalhams/repos",
+//     dataType: "json",
+//     cache: false,
+//     success: function (data, status) {
+//         var content = "";
+
+//         for (var x in data) {
+//             content += data[x].username;
+//         }
+//         console.log(content);
+        
+//     },
+//     error: function(xhr, textStatus, error){
+//         console.log(xhr);   // xml http request.
+//         console.log(textStatus);
+//         console.log(error);
+//     }
+// });
+
+
+//NOTE: with other way:
+
+
+
+// $.ajax({
+//     url: "/JSON & AJAX File/data.json",
+//     dataType: "json",
+//     cache: false,
+//     success: function (data, status) {
+//         console.log(data);
+//         console.log(status);
+//         $.each(data, function (index) {
+//             // element == this
+//             $("#username").append("<div>" + data[index].username + "</div>");
+//         });
+        
+//     },
+//     error: function(xhr, textStatus, error){
+//         console.log(xhr);   // xml http request.
+//         console.log(textStatus);
+//         console.log(error);
+//     }
 // });
