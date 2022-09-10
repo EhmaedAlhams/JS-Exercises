@@ -185,28 +185,45 @@
 // ANCHOR: Learn AJAX - Convert Response Text And Loop On It
 
 
-function getRepositories() {
-    var request = new XMLHttpRequest();
+// function getRepositories() {
+//     var request = new XMLHttpRequest();
 
-    request.onreadystatechange = function () {
+//     request.onreadystatechange = function () {
     
-        if (this.readyState === 4 && this.status === 200) {
-            // console.log(this.responseText);         // string
-            // console.log(JSON.parse(this.responseText));     //JSON
+//         if (this.readyState === 4 && this.status === 200) {
+//             // console.log(this.responseText);         // string
+//             // console.log(JSON.parse(this.responseText));     //JSON
 
-            // Convert response text to JSON:
-            var json = JSON.parse(this.responseText);
-            var content = '';
+//             // Convert response text to JSON:
+//             var json = JSON.parse(this.responseText);
+//             var content = '';
 
-            for (var i = 0; i < json.length; i++){
-                console.log(json[i]);   // all data
-                console.log(json[i].username);      // username repository   
-                content += json[i].username + '<br>'
-            }
-            document.getElementById('username').innerHTML = content
-        }
-    };
+//             for (var i = 0; i < json.length; i++){
+//                 console.log(json[i]);   // all data
+//                 console.log(json[i].username);      // username repository
+//                 content += json[i].username + '<br>'
+//             }
+//             document.getElementById('username').innerHTML = content
+//         }
+//     };
 
-    request.open("GET", "https://api.github.com/users/ehmaedalhams/repos", true);
-    request.send();
-};
+//     request.open("GET", "https://api.github.com/users/ehmaedalhams/repos", true);
+//     request.send();
+// };
+
+
+// ANCHOR: jQuery - Ajax Load
+
+$(function () {
+    $('button').click(function () { 
+        $('#jquery').
+            load("https://api.github.com/users/ehmaedalhams/repos",
+                function (response, status, request) {
+                    // this; // dom element
+                    console.log(response);
+                    console.log(status);
+                    console.log(request);
+        });
+        
+    });
+});
