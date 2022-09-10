@@ -214,16 +214,35 @@
 
 // ANCHOR: jQuery - Ajax Load
 
-$(function () {
-    $('button').click(function () { 
-        $('#jquery').
-            load("https://api.github.com/users/ehmaedalhams/repos",
-                function (response, status, request) {
-                    // this; // dom element
-                    console.log(response);
-                    console.log(status);
-                    console.log(request);
-        });
+// $(function () {
+//     $('button').click(function () {
+//         $('#jquery').
+//             load("https://api.github.com/users/ehmaedalhams/repos",
+//                 function (response, status, request) {
+//                     // this; // dom element
+//                     console.log(response);
+//                     console.log(status);
+//                     console.log(request);
+//         });
         
-    });
-});
+//     });
+// });
+
+
+// ANCHOR: jQuery - $ Get And $ Post
+
+// Get
+// $.get("url", data,
+//     function (data, textStatus, jqXHR) {
+        
+//     },
+//     "dataType"
+// );
+
+// // Post
+// $.post("url", data,
+//     function (data, textStatus, jqXHR) {
+        
+//     },
+//     "dataType"
+// );
