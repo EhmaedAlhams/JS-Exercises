@@ -145,38 +145,68 @@
 
 // Function to do the request:
 
-function getRepositories() {
+// function getRepositories() {
     
-    // assign the request 
-    // XMLHttpRequest() => object exchange data with server in background.
+//     // assign the request
+//     // XMLHttpRequest() => object exchange data with server in background.
+//     var request = new XMLHttpRequest();
+
+//     // on ready state change => call function when ready state change.
+//     request.onreadystatechange = function () {
+        
+//         /*
+//         - Ready State => the state of request.
+//         - [0] => request not initialized.
+//         - [1] => server connection established.
+//         - [2] => request received.
+//         - [3] => processing received
+//         - [4] => request is finished and response is ready.
+
+//         status:
+//         Response status code.
+//         [200] => ok.
+//         like not found page 404.
+//         */
+        
+//         // NOTE: if request is finished and response is ready and status code is ok 200
+//         // Output:
+//         // the response text.
+//         if (this.readyState === 4 && this.status === 200) {
+//             console.log(this.responseText);
+//         }
+//     };
+
+//     // XMLHttpRequest().open(Method, URL, Async, User, Password)
+//     request.open("GET", "https://api.github.com/users/ehmaedalhams/repos", true);
+//     request.send();
+// };
+
+
+// ANCHOR: Learn AJAX - Convert Response Text And Loop On It
+
+
+function getRepositories() {
     var request = new XMLHttpRequest();
 
-    // on ready state change => call function when ready state change.
     request.onreadystatechange = function () {
-        
-        /*
-        - Ready State => the state of request.
-        - [0] => request not initialized.
-        - [1] => server connection established.
-        - [2] => request received.
-        - [3] => processing received
-        - [4] => request is finished and response is ready.
-
-        status: 
-        Response status code.
-        [200] => ok.
-        like not found page 404.
-        */
-        
-        // NOTE: if request is finished and response is ready and status code is ok 200
-        // Output:
-        // the response text.
+    
         if (this.readyState === 4 && this.status === 200) {
-            console.log(this.responseText);
+            // console.log(this.responseText);         // string
+            // console.log(JSON.parse(this.responseText));     //JSON
+
+            // Convert response text to JSON:
+            var json = JSON.parse(this.responseText);
+            var content = '';
+
+            for (var i = 0; i < json.length; i++){
+                console.log(json[i]);   // all data
+                console.log(json[i].username);      // username repository   
+                content += json[i].username + '<br>'
+            }
+            document.getElementById('username').innerHTML = content
         }
     };
 
     request.open("GET", "https://api.github.com/users/ehmaedalhams/repos", true);
     request.send();
 };
-
