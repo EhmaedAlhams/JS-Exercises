@@ -132,3 +132,51 @@
 //         console.log(error);
 //     }
 // });
+
+
+// ANCHOR: AJAX => Asynchronous java Script and xml.
+
+// XML/JSON => Get & Send data to the server.
+// XML Http Request => making communication with the server.
+
+// NOTE: we use ajax to bring data without refresh.
+
+// xhr: [X]ML [H]ttp [R]equest
+
+// Function to do the request:
+
+function getRepositories() {
+    
+    // assign the request 
+    // XMLHttpRequest() => object exchange data with server in background.
+    var request = new XMLHttpRequest();
+
+    // on ready state change => call function when ready state change.
+    request.onreadystatechange = function () {
+        
+        /*
+        - Ready State => the state of request.
+        - [0] => request not initialized.
+        - [1] => server connection established.
+        - [2] => request received.
+        - [3] => processing received
+        - [4] => request is finished and response is ready.
+
+        status: 
+        Response status code.
+        [200] => ok.
+        like not found page 404.
+        */
+        
+        // NOTE: if request is finished and response is ready and status code is ok 200
+        // Output:
+        // the response text.
+        if (this.readyState === 4 && this.status === 200) {
+            console.log(this.responseText);
+        }
+    };
+
+    request.open("GET", "https://api.github.com/users/ehmaedalhams/repos", true);
+    request.send();
+};
+
