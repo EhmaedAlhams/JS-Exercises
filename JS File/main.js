@@ -3359,7 +3359,5 @@ $(selector).show(speed,callback);
 
 // 2- Fading effects: 
 
-// ANCHOR: JS Part practical - 7/9/2022.
 
-// 1 - Slider:
 

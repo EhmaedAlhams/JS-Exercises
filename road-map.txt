@@ -1,0 +1,19 @@
+What you have to do:
+[ within 6 months ]
+
+1- Course JSON -----> [done]
+2- Course Ajax -------> [done]
+3- JS Part practical
+4- Advance html and css.
+5- JQuery Part practical.
+6- Three template with JQuery.
+7- Course bootstrap.
+8- Four Template with Bootstrap.
+9- SASS css course with template.
+10- Pug.js course.
+11- Gulp.js course.
+12- vue js course.
+13- template with js vue.
+14- and more...
+
+// 15- Don't forget template Responsive  without framework.
