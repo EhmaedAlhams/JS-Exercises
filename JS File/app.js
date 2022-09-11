@@ -246,3 +246,47 @@
 //     },
 //     "dataType"
 // );
+
+
+// ANCHOR: jQuery - $.Ajax
+
+// $.ajax({
+    
+//     // caches: true,       // caches the request. default is true.
+//     // async: true,        // asynchronous. default is true.
+//     // dataType: "dataType",  // data expected from server response.
+//     data: "data",       
+//     method: "GET",      // method use for the request.
+//     type: "method",     // allies name method.
+//     url: "url",         // URL to send the request.
+//     timeout: 3000,      // time out for the request
+//     username: '',       // for authentication.
+//     password: '',
+
+//     // content type for the request. default is application/x-www-form-urlencoded.
+//         // to upload image the content type: multipart/form-data.
+
+//     contentType: '',    
+//     beforeSend: function (responseXHR) {
+//         // return response 
+//     },
+//     success: function (data, status, response) {
+//         //NOTE: function run when request success.
+
+//         // data => data in they're
+//         // status => request status.
+//         // response => XHR object response.
+//     }, 
+//     error: function (responseXHR, status, error) {
+//         // responseXHR => XHR Object
+//         // status => request status.
+//         // error => message error.
+//     },
+
+//     complete: function (responseXHR, status) {
+//         //NOTE: function run when request complete.
+
+//         // responseXHR => XHR Object
+//         // status => request status.
+//     }
+// });
