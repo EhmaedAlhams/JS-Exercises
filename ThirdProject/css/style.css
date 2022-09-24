@@ -1,0 +1,125 @@
+/* SECTION: Task/Project Three: To Do List */
+
+*{
+    box-sizing: border-box;
+}
+
+.contain{
+    margin: 30px auto 0;
+    background-color: #F6F6F6;
+    width: 600px;
+}
+
+.add{
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+
+.contain .add input{
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, .3);
+    width: calc(100% - 15px);
+    color: #FFF;
+    font-size: 20px;
+}
+
+.contain .add input:focus{
+    outline: none;
+}
+
+.contain .add .plus{
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    background-color: #FFF;
+    right: 12px;
+    border-radius: 50%;
+    line-height: 43px;
+    text-align: center;
+    color: #009688;
+    cursor: pointer;
+    font-size: 38px;
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    transition: transform .3s;
+}
+
+.contain .add .plus:hover{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.contain .task-content{
+    padding: 15px;
+}
+
+.contain .task-content .none-task{
+    color: #777;
+    font-size: 19px;
+}
+
+.contain .task-content > span{
+    display: block;
+    background-color: #FFF;
+    padding: 10px;
+}
+
+.contain .task-content > span:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.contain .task-content .task-box .delete{
+    float: right;
+    background-color: #E91E63;
+    padding: 4px 10px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contain .task-content .task-box.finished{
+    text-decoration: line-through;
+}
+
+.task-statue{
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 18px;
+}
+
+.task-statue .task-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.task-statue .task-complete{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+
+.task-statue .task-count span,
+.task-statue .task-complete span{
+    color: #FFF;
+    padding: 1px 5px;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.task-statue .task-count span{
+    background-color: #E91E63;
+}
+
+.task-statue .task-complete span{
+    background-color: #03A9F4;
+}
