@@ -5,8 +5,8 @@ What you have to do:
 2- Course Ajax -------> [done]
 3- JS Part practical
 4- Advance html and css.
-5- JQuery Part practical.
-6- Three template with JQuery.
+5- JQuery Part practical.          [for knowledge] 
+6- Three template with JQuery.     [for knowledge]      
 7- Course bootstrap.
 8- Four Template with Bootstrap.
 9- SASS css course with template.
