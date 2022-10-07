@@ -109,7 +109,7 @@ body{
 
 /* SECTION: 2- Memory Games */
 
-/* *{
+ /* *{
     box-sizing: border-box;
     padding: 0;
 }
@@ -134,8 +134,8 @@ body{
     text-align: center;
     border-radius: 6px;
     cursor: pointer;
-} */
-/* 
+} 
+
 .info-container{
     width: 1048px;
     margin: 20px auto 0;
@@ -218,4 +218,4 @@ body{
     transform: rotateY(180deg);
     pointer-events: none;
 >>>>>>> Stashed changes
-} */ 
+}  */
