@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.serial{
+    background-color: #666;
+    color: #ffffff;
+    margin: 20px auto;
+    width: 25%;
+    padding: 25px 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.generate{
+    margin: 26px auto;
+    width: 50px;
+    background-color: #aaa;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    color: #020202;
+    user-select: none;
+    font-size: larger;
+    cursor: pointer;
+}
