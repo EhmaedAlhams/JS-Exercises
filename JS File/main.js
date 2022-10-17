@@ -2618,12 +2618,12 @@ Weak Set:
 //                 [2] Done  ==> Boolean Value To Tell If The Next Value Exists Or No:
 //                         --- Next Value Exist                    ==>  done: false  ==>  Itaration Not Finished.
 //                         --- Next Value Does Not Exist  ==>  done: true    ==>  Itaration Finished.
-    
+
 // - How Do You Check If A Type Is Iterable Or Not ???
 //         -- By using: typeof <obj>[Symbol.iterator] === "function";
 //                 --- true    ==>  Iterable
 //                 --- false  ==>  Not Iterable
-    
+
 // - Built-In Types With Default @@iterator Method Are:
 //         -- String.prototype[@@iterator]()             ==>     Syntax:  str[Symbol.iterator]()
 //         -- Array.prototype[@@iterator]()              ==>     Syntax:  arr[Symbol.iterator]()
@@ -3199,7 +3199,7 @@ Weak Set:
 // $(document).ready(function(){
 
 // 	// jQuery methods go here...
-  
+
 //   });
 
 // $(function () {
@@ -3369,11 +3369,33 @@ tabs.forEach((tab) => {
 		});
 		event.target.classList.toggle('active');
 
-		contents.forEach((content) => { 
-			content.style.display = "none";
-		});
-		
-		document.querySelector(event.target.dataset.cont).style.display = "block";
-	});
-});
 
+
+// array of keys
+// Array[index]
+// let arrays = words[ArrayOfKeys] => list of item in array.
+// Like: console.log(words['cars']);
+
+let arrays = words[ArrayOfKeys]
+let RandomArrKey = Math.floor(Math.random() * arrays.length);
+let WordsOfArr = arrays[RandomArrKey]
+
+console.log(`Array from object: ${arrays}`);
+console.log(`random word in array: ${WordsOfArr}`);
+
+document.querySelector('#h1').innerHTML = WordsOfArr;
+
+
+// NOTE: problem solving - codeWars.
+// function areYouPlayingBanjo(name) {
+// 	// Implement me
+// 	if (name.startsWith("R") || name.startsWith("r")){
+// 		return name + "plays banjo";
+// 	}
+// 	else{
+// 		return name + "does not play banjo";
+// 	}
+// }
+
+// // areYouPlayingBanjo('Adam');
+// console.log(areYouPlayingBanjo('Adam'));
