@@ -3359,31 +3359,36 @@ $(selector).show(speed,callback);
 
 // SECTION: [Arabic] HTML, CSS, JavaScript Tutorials - Create Tabs
 
-let tabs = document.querySelectorAll(".tabs li");
-let contents = document.querySelectorAll(".content div");
+// let tabs = document.querySelectorAll(".tabs li");
+// let contents = document.querySelectorAll(".content div");
 
-tabs.forEach((tab) => { 
-	tab.addEventListener('click', (event) => {
-		tabs.forEach((tab) => {
-			tab.classList.remove('active');
-		});
-		event.target.classList.toggle('active');
+// tabs.forEach((tab) => { 
+// 	tab.addEventListener('click', (event) => { 
+// 		tabs.forEach((tab) => {
+// 			tab.classList.remove('active');
+// 		});
+// 		event.target.classList.toggle('active');
+// 	});
+// });
 
-
+// tabs.forEach((tab) => {
+// 	tab.addEventListener('click', (event) => {
+// 	}
+// }
 
 // array of keys
 // Array[index]
 // let arrays = words[ArrayOfKeys] => list of item in array.
 // Like: console.log(words['cars']);
 
-let arrays = words[ArrayOfKeys]
-let RandomArrKey = Math.floor(Math.random() * arrays.length);
-let WordsOfArr = arrays[RandomArrKey]
+// let arrays = words[ArrayOfKeys]
+// let RandomArrKey = Math.floor(Math.random() * arrays.length);
+// let WordsOfArr = arrays[RandomArrKey]
 
-console.log(`Array from object: ${arrays}`);
-console.log(`random word in array: ${WordsOfArr}`);
+// console.log(`Array from object: ${arrays}`);
+// console.log(`random word in array: ${WordsOfArr}`);
 
-document.querySelector('#h1').innerHTML = WordsOfArr;
+// document.querySelector('#h1').innerHTML = WordsOfArr;
 
 
 // NOTE: problem solving - codeWars.
