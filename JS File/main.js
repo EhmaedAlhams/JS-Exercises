@@ -3357,7 +3357,23 @@ $(selector).show(speed,callback);
 // 	});
 // });
 
-// 2- Fading effects: 
+// SECTION: [Arabic] HTML, CSS, JavaScript Tutorials - Create Tabs
 
+let tabs = document.querySelectorAll(".tabs li");
+let contents = document.querySelectorAll(".content div");
 
+tabs.forEach((tab) => { 
+	tab.addEventListener('click', (event) => {
+		tabs.forEach((tab) => {
+			tab.classList.remove('active');
+		});
+		event.target.classList.toggle('active');
+
+		contents.forEach((content) => { 
+			content.style.display = "none";
+		});
+		
+		document.querySelector(event.target.dataset.cont).style.display = "block";
+	});
+});
 
