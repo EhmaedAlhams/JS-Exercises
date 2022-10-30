@@ -67,20 +67,16 @@ const lvls = {
     Hard: 2,
 };
 
-// if (lvls.Easy) { 
-
-// };
-
 // Default Level
 
-let defaultLevel = "Normal";
-let defaultTime = lvls[defaultLevel];
+// let defaultLevel = "Normal";
+// let defaultTime = lvls[defaultLevel];
 
 // Catch Selectors
 
-let btn = document.querySelector('.start');
-let defaultName = document.querySelector('.message .lvl');
-let defaultTiming = document.querySelector('.message .seconds');
+let btn = document.querySelector(".start");
+let defaultName = document.querySelector(".message .lvl");
+let defaultTiming = document.querySelector(".message .seconds");
 let word = document.querySelector(".the-word");
 let upcomingWords = document.querySelector(".upcoming-words");
 let input = document.querySelector(".input");
@@ -88,46 +84,67 @@ let timeLeftSpan = document.querySelector(".time span");
 let scoreGot = document.querySelector(".score .got");
 let scoreTotal = document.querySelector(".score .total");
 let finishMessage = document.querySelector(".finish");
+let game = document.querySelector(".game");
 
 // Setting Level Name + Seconds + Score
 
-defaultName.innerHTML = defaultLevel;
-defaultTiming.innerHTML = defaultTime;
-timeLeftSpan.innerHTML = defaultTime;
-scoreTotal.innerHTML = words.length;
+// defaultName.innerHTML = defaultLevel;
+// defaultTiming.innerHTML = defaultTime;
+// timeLeftSpan.innerHTML = defaultTime;
+// scoreTotal.innerHTML = words.length;
+
+// Default Level
+
+// Setting Level Name + Seconds + Score
+
+let defaultLevel;
+let defaultTime;
+
+let checks = document.querySelectorAll('input[type="radio"]');
+
+for (const check of checks) {
+    check.addEventListener("change", function () {
+        if (this.checked) {
+            defaultName.innerHTML = this.value;
+            defaultTime = lvls[this.value];
+            defaultTiming.innerHTML = defaultTime;
+            timeLeftSpan.innerHTML = defaultTime;
+            scoreTotal.innerHTML = words.length;
+
+            btn.onclick = function () {
+                this.remove();
+                input.focus();
+                generateWord();
+            };
+        }
+    });
+}
 
 // Disable Paste Event
-input.onpaste = function () { 
+input.onpaste = function () {
     return false;
 };
 
-btn.onclick = function () { 
-    this.remove();
-    input.focus();
-    generateWord();
-};
-
-function generateWord() { 
+function generateWord() {
     let randomWord = words[Math.floor(Math.random() * words.length)];
+    word.innerHTML = randomWord;
     let indexWord = words.indexOf(randomWord);
     words.splice(indexWord, 1);
-    word.innerHTML = randomWord;
     upcomingWords.innerHTML = "";
 
-    for (let i = 0; i < words.length; i++){
-        let div = document.createElement('div');
+    for (let i = 0; i < words.length; i++) {
+        let div = document.createElement("div");
         let txt = document.createTextNode(words[i]);
-        
+
         div.appendChild(txt);
         upcomingWords.appendChild(div);
+        window.scrollTo(0, document.querySelector(".control").scrollHeight);
     }
-
     // Call Start Play Function
     CallPlay();
-};
+}
 
 function CallPlay() {
-
     timeLeftSpan.innerHTML = defaultTime;
 
     let play = setInterval(() => {
@@ -141,18 +158,18 @@ function CallPlay() {
 
                 if (words.length > 0) {
                     generateWord();
-
                 } else {
-                    let span = document.createElement('span');
+                    let span = document.createElement("span");
                     span.className = "good";
-                    let txt = document.createTextNode("Configuration");
+                    let txt = document.createTextNode("Congratulations");
                     span.appendChild(txt);
                     finishMessage.appendChild(span);
-                }
 
+                    storageLocal(scoreGot.textContent);
+                }
             } else {
-                let span = document.createElement('span');
-                span.style.backgroundColor = "#f44336"
+                let span = document.createElement("span");
+                span.style.backgroundColor = "#f44336";
                 span.style.color = "whitesmoke";
                 span.style.display = "flex";
                 span.style.justifyContent = "center";
@@ -160,13 +177,36 @@ function CallPlay() {
                 let txt = document.createTextNode("Game Over");
                 span.appendChild(txt);
                 finishMessage.appendChild(span);
-            };
-        };
 
+                storageLocal(scoreGot.textContent);
+            }
+        }
     }, 1000);
 }
 
+function storageLocal(score) {
+    let obj = {
+        score: score,
+        date: Date.now(),
+    };
 
-// let check = document.querySelector('input[type="checkbox"]').onclick = function () { 
-//     console.log("ok");
-// };
+    // set in local storage one of the way:
+    localStorage.setItem(obj.score, obj.date);
+    showScore();
+
+    // console.log(local);
+    // let data = localStorage.getItem(obj.score);
+    // console.log(data);
+}
+
+function showScore() {
+    let div = document.createElement('div');
+    div.className = "show";
+    game.appendChild(div);
+
+    let score = document.createElement('div');
+    score.className = "scoreDiv";
+    score.innerHTML = `
+    <p>Your Score: <span style="color: var(--main-color); font-weight: bold">${scoreGot.textContent}</span></p>`;
+    game.appendChild(score);
+}
