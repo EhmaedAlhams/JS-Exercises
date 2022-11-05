@@ -3,7 +3,7 @@ What you have to do:
 
 1- Course JSON -----> [done]
 2- Course Ajax -------> [done]
-3- JS Part practical
+3- JS Part practical ------> [done]
 4- Advance html and css.
 5- JQuery Part practical.          [for knowledge] 
 6- Three template with JQuery.     [for knowledge]      
