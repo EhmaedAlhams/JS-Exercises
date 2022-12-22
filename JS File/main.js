@@ -2571,7 +2571,7 @@
 Set:
 - contain any value.
 - can get keys
-- can loop with forEach 
+- can loop with forEach
 - get element size and count.
 
 Weak Set:
@@ -2618,12 +2618,12 @@ Weak Set:
 //                 [2] Done  ==> Boolean Value To Tell If The Next Value Exists Or No:
 //                         --- Next Value Exist                    ==>  done: false  ==>  Itaration Not Finished.
 //                         --- Next Value Does Not Exist  ==>  done: true    ==>  Itaration Finished.
-    
+
 // - How Do You Check If A Type Is Iterable Or Not ???
 //         -- By using: typeof <obj>[Symbol.iterator] === "function";
 //                 --- true    ==>  Iterable
 //                 --- false  ==>  Not Iterable
-    
+
 // - Built-In Types With Default @@iterator Method Are:
 //         -- String.prototype[@@iterator]()             ==>     Syntax:  str[Symbol.iterator]()
 //         -- Array.prototype[@@iterator]()              ==>     Syntax:  arr[Symbol.iterator]()
@@ -2887,7 +2887,7 @@ Weak Set:
 // SECTION: Promise and Async.
 
 // let promise = new Promise(function (resolve, reject) {
-	
+
 // 	/*
 // 	Asynchronous Operation
 // 	-- FulFilled => resolve.
@@ -2898,7 +2898,7 @@ Weak Set:
 // let request = new XMLHttpRequest();
 
 // request.onreadystatechange = function () {
-	
+
 // };
 
 
@@ -3166,9 +3166,9 @@ Weak Set:
 
 // console.log(object);
 /*
-	an writable property means that we can change his key, unwritable means it is read only property 
+	an writable property means that we can change his key, unwritable means it is read only property
 
-	An enumerable property  means that a property can be viewed if it is iterated using the for…in loop or Object.keys() 
+	An enumerable property  means that a property can be viewed if it is iterated using the for…in loop or Object.keys()
 	method.
 
 	an configurable property means that we can delete it by delete keyword, and also we can redefine it by Object.defineProperty
@@ -3199,7 +3199,7 @@ Weak Set:
 // $(document).ready(function(){
 
 // 	// jQuery methods go here...
-  
+
 //   });
 
 // $(function () {
@@ -3243,7 +3243,7 @@ Weak Set:
 	// },
 	// function(){
 	// 	alert("Bye! You now leave p1!");
-	// }); 
+	// });
 // })
 
 // on hover event.
@@ -3254,7 +3254,7 @@ Weak Set:
 // 	},
 // 	function(){
 // 	  alert("Bye! You now leave p1!");
-// 	}); 
+// 	});
 //   });
 
 // NOTE: (document).ready 	=> execute the function immediately.
@@ -3279,20 +3279,20 @@ Weak Set:
 
 // NOTE: one event => method attaches one or more event handlers for the selected elements.
 
-// $("p").on("click", function () { 
+// $("p").on("click", function () {
 // 	$(this).hide();
 // });
 
-// $(document).ready(function () { 
-// 	$("p").on("dblclick", function () { 
+// $(document).ready(function () {
+// 	$("p").on("dblclick", function () {
 // 		$(this).hide();
 // 	});
-	
+
 // });
 
 // have one or other event in this case:
 
-// $(document).ready(function () { 
+// $(document).ready(function () {
 // 	$("p").on({
 // 		mouseenter: function () {
 // 			$(this).css("background-color", "yellow");
@@ -3311,7 +3311,7 @@ Weak Set:
 
 // 1- hide and show with on effects.
 
-// $(document).ready(function () { 
+// $(document).ready(function () {
 // 	$(".hide").on({
 // 		click: (function () {
 // 			$("p").css("background-color", "black");
@@ -3322,7 +3322,7 @@ Weak Set:
 // 	});
 
 // 	$(".show").on({
-// 		click: (function () { 
+// 		click: (function () {
 // 			$("p").css("background-color", "red");
 // 		}),
 // 		dblclick: (function () {
@@ -3339,25 +3339,22 @@ $(selector).hide(speed,callback);
 $(selector).show(speed,callback);
 */
 
-// $(function () { 
-// 	$(".hide").click(function () { 
+// $(function () {
+// 	$(".hide").click(function () {
 // 		$("p").hide(1000);
 // 	});
-	
-// 	$(".show").click(function () { 
+
+// 	$(".show").click(function () {
 // 		$("p").show(1000);
 // 	});
-	
+
 // });
 
-// $(function () { 
-// 	$(".show").click(function () { 
+// $(function () {
+// 	$(".show").click(function () {
 // 		// $("p").toggle("slow");
 // 		$("p").toggle("fast");
 // 	});
 // });
 
-// 2- Fading effects: 
-
-
-
+// 2- Fading effects:

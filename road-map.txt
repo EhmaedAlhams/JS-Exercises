@@ -4,10 +4,10 @@ What you have to do:
 1- Course JSON -----> [done]
 2- Course Ajax -------> [done]
 3- JS Part practical ------> [done]
-4- Advance html and css.
-5- JQuery Part practical.          [for knowledge] 
-6- Three template with JQuery.     [for knowledge]      
-7- Course bootstrap.
+4- Advance html and css ------> [done]
+5- Course bootstrap ---------> [done]
+6- Template html, css, js-vanilla.
+7- Don't forget template Responsive  without framework. 
 8- Four Template with Bootstrap.
 9- SASS css course with template.
 10- Pug.js course.
@@ -15,5 +15,3 @@ What you have to do:
 12- vue js course.
 13- template with js vue.
 14- and more...
-
-// 15- Don't forget template Responsive  without framework.
